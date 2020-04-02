@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<element:Concept xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:element="http:///com/tibco/cep/designtime/core/model/element" namespace="/Concepts/" folder="/Concepts/" name="BusinessETOR" description="" GUID="47353D08-3874-FB75-301F-86C080F2077C" ownerProjectName="OMS_Demo" superConceptPath="" autoStartStateMachine="true">
+  <extendedProperties/>
+  <properties name="DOC" ownerProjectName="OMS_Demo" ownerPath="/Concepts/BusinessETOR"/>
+  <properties name="District" ownerProjectName="OMS_Demo" ownerPath="/Concepts/BusinessETOR"/>
+  <properties name="BusinessETORStartTs" ownerProjectName="OMS_Demo" type="DateTime" ownerPath="/Concepts/BusinessETOR"/>
+  <properties name="BusinessETOREndTs" ownerProjectName="OMS_Demo" type="DateTime" ownerPath="/Concepts/BusinessETOR"/>
+  <properties name="BusinessETORMsg" ownerProjectName="OMS_Demo" ownerPath="/Concepts/BusinessETOR"/>
+  <properties name="Enabled" ownerProjectName="OMS_Demo" type="boolean" ownerPath="/Concepts/BusinessETOR"/>
+</element:Concept>

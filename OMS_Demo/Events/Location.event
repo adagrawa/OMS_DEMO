@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><event:SimpleEvent xmlns:event="http:///com/tibco/cep/designtime/core/model/event" xmlns:xmi="http://www.omg.org/XMI" xmi:version="2.0" namespace="/Events/" folder="/Events/" name="Location" description="" GUID="30FE19DA-D138-33AF-03C0-CD494C5E1F0C" ownerProjectName="OMS_Demo" superEventPath="" ttl="-1" ttlUnits="Seconds" channelURI="/Channels/EMS" destinationName="Location">
+          
+    
+    <properties name="LocationId" ownerProjectName="OMS_Demo" ownerPath="/Events/Location"/>
+          
+    
+    <properties name="AccountID" ownerProjectName="OMS_Demo" ownerPath="/Events/Location"/>
+          
+    
+    <properties name="ZipCode" ownerProjectName="OMS_Demo" ownerPath="/Events/Location"/>
+          
+    
+    <properties name="County" ownerProjectName="OMS_Demo" ownerPath="/Events/Location"/>
+          
+    
+    <properties name="Disconnected" ownerProjectName="OMS_Demo" type="boolean" ownerPath="/Events/Location"/>
+          
+    
+    <properties name="DisconnectedTimestamp" ownerProjectName="OMS_Demo" type="DateTime" ownerPath="/Events/Location"/>
+          
+    
+    <properties name="CommunicationEnrolled" ownerProjectName="OMS_Demo" type="boolean" ownerPath="/Events/Location"/>
+          
+    
+    <properties name="CommunicationEnrollmentTimestamp" ownerProjectName="OMS_Demo" type="DateTime" ownerPath="/Events/Location"/>
+          
+    
+    <properties name="CustomerInitiatedPlannedOutage" ownerProjectName="OMS_Demo" type="boolean" ownerPath="/Events/Location"/>
+          
+    
+    <properties name="CustomerPlannedOutageStartTimestamp" ownerProjectName="OMS_Demo" type="DateTime" ownerPath="/Events/Location"/>
+          
+    
+    <properties name="CustomerPlannedOutageEndTimestamp" ownerProjectName="OMS_Demo" type="DateTime" ownerPath="/Events/Location"/>
+          
+    
+    <properties name="LastUpdatedBySource" ownerProjectName="OMS_Demo" ownerPath="/Events/Location"/>
+          
+    
+    <properties name="CurrentState" ownerProjectName="OMS_Demo" ownerPath="/Events/Location"/>
+          
+    
+    <properties name="LocationType" ownerProjectName="OMS_Demo" ownerPath="/Events/Location"/>
+          
+    
+    <properties name="Language" ownerProjectName="OMS_Demo" ownerPath="/Events/Location"/>
+          
+    
+    <expiryAction name="Location_expiryAction" ownerProjectName="OMS_Demo" actionText="" conditionText="">
+                    
+        
+        <symbols>
+                              
+            
+            <symbolList idName="location" type="/Events/Location"/>
+                            
+        
+        </symbols>
+                  
+    
+    </expiryAction>
+        
+
+</event:SimpleEvent>

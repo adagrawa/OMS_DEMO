@@ -1,0 +1,34 @@
+/**
+ * @description 
+ */
+void rulefunction RuleFunctions.ExecuteBusinessETOR {
+	attribute {
+		validity = ACTION;
+	}
+	scope {
+		
+	}
+	body {
+		String eastDOC="East";
+		String westDOC="West";
+		String []eastDistrict = {"Dallas"};
+		String []westDistrict = {"Forthworth"};
+		int index = 0;
+		for (index=0; index < eastDistrict@length;index++) {
+			Concepts.BusinessETOR btor = Instance.newInstance("/Concepts/BusinessETOR","");
+			btor.DOC = eastDOC;
+			btor.District=eastDistrict[index];
+			btor.Enabled=true;
+		    RuleFunctions.Enforce_ETOR(btor);
+		    System.debugOut("here in enforce_ETOR "+btor.DOC+" :: "+btor.District+" :: "+btor.BusinessETORMsg);	
+		}
+		for (index=0; index < westDistrict@length;index++) {
+			Concepts.BusinessETOR btor = Instance.newInstance("/Concepts/BusinessETOR","");
+			btor.DOC = westDOC;
+			btor.District=westDistrict[index];
+			btor.Enabled=true;
+		    RuleFunctions.Enforce_ETOR(btor);	
+		    System.debugOut("here in enforce_ETOR "+btor.DOC+" :: "+btor.District+" :: "+btor.BusinessETORMsg);
+		}
+	}
+}

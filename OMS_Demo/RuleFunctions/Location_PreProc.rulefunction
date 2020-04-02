@@ -1,0 +1,21 @@
+/**
+ * @description 
+ */
+void rulefunction RuleFunctions.Location_PreProc {
+	attribute {
+		validity = ACTION;
+	}
+	scope {
+		Events.Location locn;
+	}
+	body {
+		System.debugOut("Here in preproc "+locn.LocationId);
+		Concepts.Location location = Instance.getByExtId("locn-"+locn.LocationId);
+		if (location == null) {
+			System.debugOut("Creating object for location id "+locn.LocationId);
+			//location = Instance.newInstance("/Concepts/Location","locn-"+locn.LocationId);
+			Instance.createInstance("xslt://{{/Concepts/Location}}<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<xsl:stylesheet xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\" version=\"2.0\"><xsl:param name=\"locn\"/><xsl:template name=\"Function\" match=\"/\"><createObject><object><xsl:attribute name=\"extId\"><xsl:value-of select=\"concat(&quot;locn-&quot;,$locn/LocationId)\"/></xsl:attribute><xsl:if test=\"$locn/LocationId\"><LocationId><xsl:value-of select=\"$locn/LocationId\"/></LocationId></xsl:if><xsl:if test=\"$locn/AccountID\"><AccountID><xsl:value-of select=\"$locn/AccountID\"/></AccountID></xsl:if><xsl:if test=\"$locn/ZipCode\"><ZipCode><xsl:value-of select=\"$locn/ZipCode\"/></ZipCode></xsl:if><xsl:if test=\"$locn/County\"><County><xsl:value-of select=\"$locn/County\"/></County></xsl:if><xsl:if test=\"$locn/Disconnected\"><Disconnected><xsl:value-of select=\"$locn/Disconnected\"/></Disconnected></xsl:if><xsl:if test=\"$locn/DisconnectedTimestamp\"><DisconnectedTs><xsl:value-of select=\"$locn/DisconnectedTimestamp\"/></DisconnectedTs></xsl:if><xsl:if test=\"$locn/CommunicationEnrolled\"><CommunicationEnrolled><xsl:value-of select=\"$locn/CommunicationEnrolled\"/></CommunicationEnrolled></xsl:if><xsl:if test=\"$locn/CommunicationEnrollmentTimestamp\"><CommunicationEnrollmentTs><xsl:value-of select=\"$locn/CommunicationEnrollmentTimestamp\"/></CommunicationEnrollmentTs></xsl:if><xsl:if test=\"$locn/CustomerInitiatedPlannedOutage\"><CustomerInitiatedPlannedOutage><xsl:value-of select=\"$locn/CustomerInitiatedPlannedOutage\"/></CustomerInitiatedPlannedOutage></xsl:if><xsl:if test=\"$locn/CustomerPlannedOutageStartTimestamp\"><CustomerPlannedOutageStartTs><xsl:value-of select=\"$locn/CustomerPlannedOutageStartTimestamp\"/></CustomerPlannedOutageStartTs></xsl:if><xsl:if test=\"$locn/LastUpdatedBySource\"><LastUpdatedBySource><xsl:value-of select=\"$locn/LastUpdatedBySource\"/></LastUpdatedBySource></xsl:if><xsl:if test=\"$locn/CurrentState\"><CurrentState><xsl:value-of select=\"$locn/CurrentState\"/></CurrentState></xsl:if><xsl:if test=\"$locn/LocationType\"><LocationType><xsl:value-of select=\"$locn/LocationType\"/></LocationType></xsl:if><xsl:if test=\"$locn/Language\"><Language><xsl:value-of select=\"$locn/Language\"/></Language></xsl:if></object></createObject></xsl:template></xsl:stylesheet>");
+			
+		}
+	}
+}

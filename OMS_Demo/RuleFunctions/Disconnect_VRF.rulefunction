@@ -1,0 +1,14 @@
+/**
+ * @description 
+ */
+virtual void rulefunction RuleFunctions.Disconnect_VRF {
+	attribute {
+		validity = ACTION;
+	}
+	scope {
+		Concepts.Location locn;
+	}
+	body {
+		
+	}
+}

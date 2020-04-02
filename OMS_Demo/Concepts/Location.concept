@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<element:Concept xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:element="http:///com/tibco/cep/designtime/core/model/element" namespace="/Concepts/" folder="/Concepts/" name="Location" description="" GUID="FBAAA220-BAC7-BEA4-F84E-F11247CC13F5" ownerProjectName="OMS_Demo" superConceptPath="" autoStartStateMachine="true">
+  <extendedProperties/>
+  <properties name="LocationId" ownerProjectName="OMS_Demo" ownerPath="/Concepts/Location"/>
+  <properties name="AccountID" ownerProjectName="OMS_Demo" ownerPath="/Concepts/Location"/>
+  <properties name="ZipCode" ownerProjectName="OMS_Demo" ownerPath="/Concepts/Location"/>
+  <properties name="County" ownerProjectName="OMS_Demo" ownerPath="/Concepts/Location"/>
+  <properties name="Disconnected" ownerProjectName="OMS_Demo" type="boolean" ownerPath="/Concepts/Location"/>
+  <properties name="DisconnectedTs" ownerProjectName="OMS_Demo" type="DateTime" ownerPath="/Concepts/Location"/>
+  <properties name="CommunicationEnrolled" ownerProjectName="OMS_Demo" type="boolean" ownerPath="/Concepts/Location"/>
+  <properties name="CommunicationEnrollmentTs" ownerProjectName="OMS_Demo" type="DateTime" ownerPath="/Concepts/Location"/>
+  <properties name="CustomerInitiatedPlannedOutage" ownerProjectName="OMS_Demo" type="boolean" ownerPath="/Concepts/Location"/>
+  <properties name="CustomerPlannedOutageStartTs" ownerProjectName="OMS_Demo" type="DateTime" ownerPath="/Concepts/Location"/>
+  <properties name="CustomerPlannedOutageEndTs" ownerProjectName="OMS_Demo" type="DateTime" ownerPath="/Concepts/Location"/>
+  <properties name="LastUpdatedBySource" ownerProjectName="OMS_Demo" ownerPath="/Concepts/Location"/>
+  <properties name="CurrentState" ownerProjectName="OMS_Demo" ownerPath="/Concepts/Location"/>
+  <properties name="LocationType" ownerProjectName="OMS_Demo" ownerPath="/Concepts/Location"/>
+  <properties name="Language" ownerProjectName="OMS_Demo" ownerPath="/Concepts/Location"/>
+  <properties name="BusinessETORStartTs" ownerProjectName="OMS_Demo" type="DateTime" ownerPath="/Concepts/Location"/>
+  <properties name="OMSETORTs" ownerProjectName="OMS_Demo" ownerPath="/Concepts/Location"/>
+  <properties name="Enforced" ownerProjectName="OMS_Demo" type="boolean" ownerPath="/Concepts/Location"/>
+  <properties name="DOC" ownerProjectName="OMS_Demo" ownerPath="/Concepts/Location"/>
+  <properties name="District" ownerProjectName="OMS_Demo" ownerPath="/Concepts/Location"/>
+  <properties name="BusinessETOREndTs" ownerProjectName="OMS_Demo" type="DateTime" ownerPath="/Concepts/Location"/>
+  <properties name="BusinessETORMsg" ownerProjectName="OMS_Demo" ownerPath="/Concepts/Location"/>
+  <properties name="BusinessETORStartTime" ownerProjectName="OMS_Demo" ownerPath="/Concepts/Location"/>
+  <properties name="BusinessETOREndTime" ownerProjectName="OMS_Demo" ownerPath="/Concepts/Location"/>
+</element:Concept>

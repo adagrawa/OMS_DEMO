@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<event:TimeEvent xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:event="http:///com/tibco/cep/designtime/core/model/event" namespace="/Events/" folder="/Events/" name="abc" description="" GUID="F4DC1ED5-F47D-E1A5-D571-12F10CEF8E38" ownerProjectName="OMS_Demo" type="TimeEvent" superEventPath=""/>

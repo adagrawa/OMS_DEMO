@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<event:SimpleEvent xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:event="http:///com/tibco/cep/designtime/core/model/event" namespace="/Events/" folder="/Events/" name="BETOR" description="" GUID="DAB689DA-EEAF-06AB-D026-70133A5F4741" ownerProjectName="OMS_Demo" superEventPath="" ttlUnits="Seconds" channelURI="/Channels/EMS" destinationName="BETOR">
+  <expiryAction folder="/Events/BETOR" name="Simple_expiryAction" ownerProjectName="OMS_Demo" actionText="" conditionText="">
+    <symbols>
+      <symbolList idName="simple" type="/Events/BETOR"/>
+    </symbols>
+  </expiryAction>
+</event:SimpleEvent>

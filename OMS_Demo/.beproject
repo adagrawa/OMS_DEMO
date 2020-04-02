@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration:StudioProjectConfiguration xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:configuration="http:///com/tibco/cep/studio/common/configuration/model/project_configuration.ecore" name="OMS_Demo" version="5.6.1" build="070" xpathVersion="2.0">
+  <javaSourceFolderEntries entryType="JAVA_SOURCE_FOLDER" path="/OMS_Demo/JavaSrc" readOnly="true"/>
+  <enterpriseArchiveConfiguration name="OMS_Demo" author="mpalkar" version="15" path="C:\poc\oncor\OMS_Demo.ear" overwrite="true"/>
+  <bpmnProcessSettings/>
+</configuration:StudioProjectConfiguration>

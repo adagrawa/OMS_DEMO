@@ -1,0 +1,24 @@
+/**
+ * @description 
+ * @author mpalkar-p51
+ */
+rule Rules.TriggerOnLocation {
+	attribute {
+		priority = 5;
+		forwardChain = true;
+	}
+	declare {
+		Events.Location ln;
+		Concepts.Location locn;	
+	}
+	when {
+		locn.LocationId == ln.LocationId;		
+	}
+	then {
+		System.debugOut("Here in Trigger Rule "+ln.LocationId);
+	//	Concepts.Location locn = Instance.getByExtId("locn-"+ln.LocationId); 
+		//RuleFunctions.Disconnect_VRF(locn);
+		RuleFunctions.ExecuteBusinessETOR();
+		Event.consumeEvent(ln);
+	}
+}

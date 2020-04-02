@@ -1,0 +1,14 @@
+/**
+ * @description 
+ */
+virtual void rulefunction RuleFunctions.Enforce_ETOR {
+	attribute {
+		validity = ACTION;
+	}
+	scope {
+	    Concepts.BusinessETOR  docDistrict; 
+	}
+	body {
+		
+	}
+}

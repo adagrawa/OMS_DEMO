@@ -1,0 +1,19 @@
+/**
+ * @description 
+ * @author mpalkar-p51
+ */
+rule Rules.Name {
+	attribute {
+		priority = 5;
+		forwardChain = true;
+	}
+	declare {
+		Events.BETOR s;
+	}
+	when {
+		
+	}
+	then {
+		System.debugOut("Got it");
+	}
+}
