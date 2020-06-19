@@ -1,2 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Table:Table xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:Table="http:///com/tibco/cep/decision/table/model/DecisionTable.ecore" name="Disconnect" folder="/RuleFunctions/" implements="/RuleFunctions/Disconnect_VRF" since="BE 4.0"><md/><decisionTable><rule id="1"><md><prop name="Priority" type="prop" value="5"/><prop name="Description" type="string" value=""/></md><cond comment="" id="1_4" colId="4" expr="&quot;king&quot;"/><cond comment="" id="1_5" colId="5" expr="true"/><act comment="" id="1_6" colId="6" expr="System.debugOut(&quot;Send Alert&quot;)"/><act comment="" id="1_PRIORITY" colId="PRIORITY" expr="5"/></rule><rule id="2"><md><prop name="Priority" type="prop" value="5"/><prop name="Description" type="string" value=""/></md><cond comment="" id="2_4" colId="4" expr="&quot;king&quot;"/><cond comment="" id="2_5" colId="5" expr="false"/><act comment="" id="2_6" colId="6" expr="System.debugOut(&quot;Restored&quot;)"/><act comment="" id="2_PRIORITY" colId="PRIORITY" expr="5"/></rule><rule id="3"><md><prop name="Priority" type="prop" value="5"/><prop name="Description" type="string" value=""/></md><cond comment="" id="3_4" colId="4" expr="&quot;jones&quot;"/><cond comment="" id="3_5" colId="5" expr="true"/><act comment="" id="3_6" colId="6" expr="System.debugOut(&quot;Send Alert, county is jones.&quot;)"/><act comment="" id="3_PRIORITY" colId="PRIORITY" expr="5"/></rule><rule id="4"><md><prop name="Priority" type="prop" value="5"/><prop name="Description" type="string" value=""/></md><cond comment="" id="4_4" colId="4" expr="&quot;jones&quot;"/><cond comment="" id="4_5" colId="5" expr="false"/><act comment="" id="4_6" colId="6" expr="System.debugOut(&quot;No Action &quot;+locn.County+&quot; &quot;+locn.Disconnected)"/><act comment="" id="4_PRIORITY" colId="PRIORITY" expr="5"/></rule><rule id="5"><md><prop name="Priority" type="prop" value="5"/><prop name="Description" type="string" value=""/></md><cond comment="" id="5_4" colId="4" expr="&quot;queen&quot;"/><cond comment="" id="5_5" colId="5" expr="true"/><act comment="" id="5_6" colId="6" expr="System.debugOut(&quot;Send Alert, county is queen&quot;)"/><act comment="" id="5_PRIORITY" colId="PRIORITY" expr="5"/></rule><columns><column id="4" name="locn.County" propertyPath="/Concepts/Location/County" columnType="CONDITION" defaultCellText=""/><column id="5" name="locn.Disconnected" propertyPath="/Concepts/Location/Disconnected" propertyType="4" columnType="CONDITION" defaultCellText=""/><column id="6" name="Custom Action 1" propertyPath="" columnType="CUSTOM_ACTION" defaultCellText=""/></columns></decisionTable><exceptionTable/><argument direction="BOTH"><property path="/Concepts/Location" alias="locn" resourceType="CONCEPT"/></argument></Table:Table>
+<Table:Table xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:Table="http:///com/tibco/cep/decision/table/model/DecisionTable.ecore" name="Disconnect" folder="/RuleFunctions/" implements="/RuleFunctions/Disconnect_VRF" since="BE 4.0">
+  <md/>
+  <decisionTable>
+    <rule id="1">
+      <md>
+        <prop name="Priority" type="prop" value="5"/>
+        <prop name="Description" type="string" value=""/>
+      </md>
+      <cond comment="" id="1_4" colId="4" expr="&quot;king&quot;"/>
+      <cond comment="" id="1_5" colId="5" expr="true"/>
+      <act comment="" id="1_6" colId="6" expr="System.debugOut(&quot;Send Alert&quot;)"/>
+      <act comment="" id="1_PRIORITY" colId="PRIORITY" expr="5"/>
+    </rule>
+    <rule id="2">
+      <md>
+        <prop name="Priority" type="prop" value="5"/>
+        <prop name="Description" type="string" value=""/>
+      </md>
+      <cond comment="" id="2_4" colId="4" expr="&quot;king&quot;"/>
+      <cond comment="" id="2_5" colId="5" expr="false"/>
+      <act comment="" id="2_6" colId="6" expr="System.debugOut(&quot;Restored&quot;)"/>
+      <act comment="" id="2_PRIORITY" colId="PRIORITY" expr="5"/>
+    </rule>
+    <rule id="3">
+      <md>
+        <prop name="Priority" type="prop" value="5"/>
+        <prop name="Description" type="string" value=""/>
+      </md>
+      <cond comment="" id="3_4" colId="4" expr="&quot;jon&quot;"/>
+      <cond comment="" id="3_5" colId="5" expr="true"/>
+      <act comment="" id="3_6" colId="6" expr="System.debugOut(&quot;Send Alert, county is jones.&quot;)"/>
+      <act comment="" id="3_PRIORITY" colId="PRIORITY" expr="5"/>
+    </rule>
+    <rule id="4">
+      <md>
+        <prop name="Priority" type="prop" value="5"/>
+        <prop name="Description" type="string" value=""/>
+      </md>
+      <cond comment="" id="4_4" colId="4" expr="&quot;jones&quot;"/>
+      <cond comment="" id="4_5" colId="5" expr="false"/>
+      <act comment="" id="4_6" colId="6" expr="System.debugOut(&quot;No Action &quot;+locn.County+&quot; &quot;+locn.Disconnected)"/>
+      <act comment="" id="4_PRIORITY" colId="PRIORITY" expr="5"/>
+    </rule>
+    <rule id="5">
+      <md>
+        <prop name="Priority" type="prop" value="5"/>
+        <prop name="Description" type="string" value=""/>
+      </md>
+      <cond comment="" id="5_4" colId="4" expr="&quot;queen&quot;"/>
+      <cond comment="" id="5_5" colId="5" expr="true"/>
+      <act comment="" id="5_6" colId="6" expr="System.debugOut(&quot;Send Alert, county is queen&quot;)"/>
+      <act comment="" id="5_PRIORITY" colId="PRIORITY" expr="5"/>
+    </rule>
+    <columns>
+      <column id="4" name="locn.County" propertyPath="/Concepts/Location/County" columnType="CONDITION" defaultCellText=""/>
+      <column id="5" name="locn.Disconnected" propertyPath="/Concepts/Location/Disconnected" propertyType="4" columnType="CONDITION" defaultCellText=""/>
+      <column id="6" name="Custom Action 1" propertyPath="" columnType="CUSTOM_ACTION" defaultCellText=""/>
+    </columns>
+  </decisionTable>
+  <exceptionTable/>
+  <argument direction="BOTH">
+    <property path="/Concepts/Location" alias="locn" resourceType="CONCEPT"/>
+  </argument>
+</Table:Table>
